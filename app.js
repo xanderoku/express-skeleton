@@ -8,7 +8,7 @@ app.use(morgan("dev"));
 
 const path = require('path');
 
-// Обработка POST запросов.
+// Обработка POST запросов (вместо импорта body parser).
 // urlencoded.
 app.use(express.urlencoded({extended: true}));
 // json.
